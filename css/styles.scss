@@ -1,3 +1,4 @@
+//variables declared
 $lt-gray: #ddd;
 $background-dark: #512DA8;
 $background-light: #9575CD;
@@ -5,10 +6,12 @@ $background-pale: #D1C4E9;
 
 // Height variables
 $carousel-item-height: 300px;
+
 @mixin zero-margin($pad-up-dn, $pad-left-right) {
 	margin:0px auto;
 	padding: $pad-up-dn $pad-left-right;
 }
+
 .row-header{
     @include zero-margin(0px,0px);
 }
@@ -51,8 +54,9 @@ body{
     border-bottom: 1px solid $lt-gray;
     padding: 10px;
 }
+
 .carousel {
-    background:$background-dark;
+    background: $background-dark;
 
     .carousel-item {
         height: $carousel-item-height;
@@ -63,6 +67,26 @@ body{
             min-height: 300px;
         }
     }
+}
+
+.modal-content {
+	border: 0px;
+
+	.modal-body {
+		background: $background-light;
+	}
+
+	.modal-header {
+		background: $background-dark;
+		color: floralwhite;
+		border: 0px;
+
+		.close {
+			color: floralwhite;
+		}
+
+	}
+
 }
 
 #carouselButton {
